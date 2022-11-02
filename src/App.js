@@ -1,12 +1,42 @@
+import React, { useCallback, useEffect, useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Header from './routes/Header/Header'
 import Home from './routes/Home/Home'
 import About from './routes/About/About'
-import './assets/css/style.css'
-import data from './data/data.json'
 import Work from './routes/Work/Work'
 
+// Data
+import data from './data/data.json'
+
+// Style
+import './assets/css/style.css'
+
 const App = () => {
+	const [MyData, setMyData] = useState([])
+
+	const fetchedData = useCallback(() => {
+		fetch('data.json', {
+			headers: {
+				'Content-Type': 'application/json',
+				Accept: 'application/json',
+			},
+		})
+			.then((res) => {
+				console.log(res, 'res')
+				return res.json()
+			})
+			.then((myJson) => {
+				setMyData(myJson)
+				// mydata.push(myJson)
+			})
+	}, [setMyData])
+
+	useEffect(() => {
+		fetchedData()
+	}, [fetchedData])
+
+	console.log(MyData, 'mydata')
+
 	return (
 		<Routes>
 			<Route path='/' element={<Header props={data} />}>
