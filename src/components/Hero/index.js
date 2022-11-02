@@ -9,8 +9,8 @@ const Hero = ({ props }) => {
 			fluid
 			className={`${props.first_name}-${props.last_name}-Portfolio hero`}>
 			<Container className='mx-auto'>
-				<Container className='text-center hero__title'>
-					<h1 className='display-1'>{props.position}</h1>
+				<Container className='hero__title mx-0 px-0'>
+					<h1 className=''>{props.position}</h1>
 				</Container>
 				<Row>
 					<Col sm={5}>
@@ -55,14 +55,24 @@ const Hero = ({ props }) => {
 					</p>
 				</div>
 				<div className='hero__curved__bg__touts hero__curved__bg__touts__four'>
-					<p>SASS</p>
+					<p>
+						<strong>SASS</strong>
+						<br />
+						Some work done
+					</p>
 				</div>
 				<div className='hero__curved__bg__touts hero__curved__bg__touts__five'>
-					<p>Class & Functional Components</p>
+					<p>
+						<strong>Class & Functional Components</strong>
+						<br />
+						Some work done
+					</p>
 				</div>
 
 				<p className='hero__curved__bg__touts__six'>
-					Class & Functional Components
+					<strong>Class & Functional Components</strong>
+					<br />
+					Some work done
 				</p>
 			</div>
 		</Container>
