@@ -1,0 +1,43 @@
+@font-face {
+	font-family: 'didot';
+	src: url('../../assets/GFS_Didot/GFSDidot-Regular.ttf') format('truetype');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: didot;
+}
+
+p {
+	padding-bottom: 24px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	display: inline-block;
+	list-style-type: none;
+}
+
+.h-90vh {
+	height: 90vh;
+}
+
+.h-100vh {
+	height: 100vh;
+}
+
+.w-100vw {
+	width: 100vw;
+}
+
+.didot {
+	font-family: didot;
+}
+
