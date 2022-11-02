@@ -11,7 +11,7 @@ class Projects extends Component {
 			<Container className='mx-auto'>
 				<Row className='mx-auto'>
 					{projects.map((i, k) => (
-						<Col sm={4} key={k}>
+						<Col sm={6} key={k}>
 							<h3>{i.projectName}</h3>
 							{i.workDone !== '' && <p>{i.workDone}</p>}
 							<a href={i.url} target='_blank' rel='noreferrer'>
