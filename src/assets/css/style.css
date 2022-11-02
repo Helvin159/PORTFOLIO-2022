@@ -11,10 +11,12 @@ h6 {
   font-family: didot; }
 
 p {
-  padding-bottom: 24px; }
+  margin-bottom: 24px; }
 
 ul {
-  list-style-type: none; }
+  list-style-type: none;
+  margin: 0 0;
+  padding: 0 0; }
 
 li {
   display: inline-block;
@@ -31,6 +33,16 @@ li {
 
 .didot {
   font-family: didot; }
+
+.nav__bar {
+  background-color: #000;
+  color: #f0ead6;
+  font-size: 1.1rem; }
+  .nav__bar .text-right {
+    text-align: right; }
+  .nav__bar a {
+    color: #f0ead6;
+    text-decoration: none; }
 
 .hero {
   background-color: #000;
