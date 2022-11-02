@@ -13,7 +13,11 @@ const Header = ({ props }) => {
 							<p className='didot m-0'>
 								{props.nav_links.map(
 									(e, i) =>
-										e.url === '/' && <Link to='/'>{props.nick_name}</Link>
+										e.url === '/' && (
+											<Link to='/' key={i}>
+												{props.nick_name}
+											</Link>
+										)
 								)}
 							</p>
 						</div>
