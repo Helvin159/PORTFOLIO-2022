@@ -33,7 +33,7 @@
 	"cms": ["Sitecore", "Wordpress", "BigCommerce"],
 	"nav_links": [
 		{ "url": "/", "link_text": "Home" },
-		{ "url": "/portfolio", "link_text": "Work" },
+		{ "url": "/work", "link_text": "Work" },
 		{ "url": "/about", "link_text": "About" },
 		{ "url": "/blog", "link_text": "Blog" },
 		{ "url": "/contact", "link_text": "Contact" }
@@ -51,13 +51,17 @@
 		{
 			"projectName": "RollByADP",
 			"workDone": "",
-			"languages": "",
+			"languages": ["JavaScript", "JQuery", "html5", "CSS"],
+			"frameworks": ["ReactJs", "Vue3", "Bootstrap", "Sitecore JSS"],
+			"cms": ["Sitecore"],
 			"url": "https://rollbyadp.com"
 		},
 		{
 			"projectName": "Blog by RollByADP",
 			"workDone": "",
-			"languages": "",
+			"languages": ["JavaScript", "html5", "CSS", "SASS"],
+			"frameworks": ["ReactJs", "Bootstrap", "Sitecore JSS"],
+			"cms": ["Sitecore"],
 			"url": "https://blog.rollbyadp.com"
 		},
 		{
@@ -65,6 +69,13 @@
 			"workDone": "",
 			"languages": "",
 			"url": "https://criterionticketing.com/"
+		},
+		{
+			"projectName": "Highland Home Loans",
+			"workDone": "",
+			"languages": ["JavaScript", "html5", "CSS"],
+			"cms": ["Crownpeak"],
+			"url": "https://www.highlandhomeloans.com/"
 		}
 	]
 }
