@@ -26,6 +26,10 @@ li {
 	list-style-type: none;
 }
 
+.font48 {
+	font-size: 48px;
+}
+
 .h-90vh {
 	height: 90vh;
 }
@@ -38,12 +42,23 @@ li {
 	width: 100vw;
 }
 
+.maxW1024 {
+	max-width: 1024px;
+}
+
 .didot {
 	font-family: didot;
 }
 
+.egg-shell-font {
+	color: #f0ead6;
+}
+
+.egg-shell-background {
+	background: #f0ead6;
+}
+
 main {
-	max-width: 1024px;
 	margin: 0 auto;
 }
 body {

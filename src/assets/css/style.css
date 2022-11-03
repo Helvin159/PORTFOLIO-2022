@@ -21,6 +21,9 @@ ul {
 li {
   list-style-type: none; }
 
+.font48 {
+  font-size: 48px; }
+
 .h-90vh {
   height: 90vh; }
 
@@ -30,11 +33,19 @@ li {
 .w-100vw {
   width: 100vw; }
 
+.maxW1024 {
+  max-width: 1024px; }
+
 .didot {
   font-family: didot; }
 
+.egg-shell-font {
+  color: #f0ead6; }
+
+.egg-shell-background {
+  background: #f0ead6; }
+
 main {
-  max-width: 1024px;
   margin: 0 auto; }
 
 body {
@@ -163,7 +174,6 @@ body {
       text-decoration: underline; }
 
 .projects {
-  padding: 1rem;
   background-color: #000; }
   .projects .row {
     margin: 2.5rem auto;

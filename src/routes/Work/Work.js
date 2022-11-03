@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import ProjectsShowcase from '../../components/ProjectsShowcase'
 
 const Work = ({ props }) => {
 	return (
-		<div>
+		<Fragment>
 			<ProjectsShowcase props={props} />
-		</div>
+		</Fragment>
 	)
 }
 
