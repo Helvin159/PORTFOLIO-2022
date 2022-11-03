@@ -50,30 +50,63 @@
 	"projects": [
 		{
 			"projectName": "RollByADP",
-			"workDone": "",
-			"languages": ["JavaScript", "JQuery", "html5", "CSS"],
-			"frameworks": ["ReactJs", "Vue3", "Bootstrap", "Sitecore JSS"],
+			"workDone": "Replatform an already existing site.",
+			"screenshot": "./assets/projects/project_one.png",
+			"languages": [
+				{ "lang": "JavaScript" },
+				{ "lang": "JQuery" },
+				{ "lang": "html5" },
+				{ "lang": "CSS" }
+			],
+			"frameworks": [
+				{ "framework": "ReactJs" },
+				{ "framework": "Vue3" },
+				{ "framework": "Bootstrap" },
+				{ "framework": "Sitecore JSS" }
+			],
 			"cms": ["Sitecore"],
 			"url": "https://rollbyadp.com"
 		},
 		{
 			"projectName": "Blog by RollByADP",
-			"workDone": "",
-			"languages": ["JavaScript", "html5", "CSS", "SASS"],
-			"frameworks": ["ReactJs", "Bootstrap", "Sitecore JSS"],
+			"workDone": "Build a blog for RollbyADP.com",
+			"screenshot": "./assets/projects/project_two.png",
+			"languages": [
+				{ "lang": "JavaScript" },
+				{ "lang": "html5" },
+				{ "lang": "CSS" },
+				{ "lang": "SASS" }
+			],
+			"frameworks": [
+				{ "framework": "ReactJs" },
+				{ "framework": "Bootstrap" },
+				{ "framework": "Sitecore JSS" }
+			],
 			"cms": ["Sitecore"],
 			"url": "https://blog.rollbyadp.com"
 		},
 		{
 			"projectName": "Criterion Ticketing",
-			"workDone": "",
-			"languages": "",
+			"workDone": "Vue3 Project, building components and their functionality",
+			"screenshot": "./assets/projects/project_four.png",
+			"languages": [
+				{ "lang": "JavaScript" },
+				{ "lang": "CSS" },
+				{ "lang": "html5" }
+			],
+			"frameworks": [{ "framework": "Vue3" }, { "framework": "Tailwind" }],
+			"cms": [],
 			"url": "https://criterionticketing.com/"
 		},
 		{
 			"projectName": "Highland Home Loans",
 			"workDone": "",
-			"languages": ["JavaScript", "html5", "CSS"],
+			"screenshot": "./assets/projects/project_three.png",
+			"languages": [
+				{ "lang": "JavaScript" },
+				{ "lang": "html5" },
+				{ "lang": "CSS" }
+			],
 			"cms": ["Crownpeak"],
 			"url": "https://www.highlandhomeloans.com/"
 		}
