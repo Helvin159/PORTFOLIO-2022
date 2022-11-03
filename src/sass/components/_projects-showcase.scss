@@ -1,7 +1,30 @@
 .projects {
+	padding: 1rem;
+	background-color: #000;
+	& .row {
+		margin: 2.5rem auto;
+		// box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+		border-radius: 5px;
+		background-color: #f0ead6;
+	}
 	&__cards {
 		padding: 3rem;
-		color: #f0ead6;
+
+		&__card {
+			& ul {
+				// text-align: left;
+				// padding: 0 4.8rem;
+
+				& li {
+					display: inline-block;
+					padding-right: 10px;
+				}
+			}
+			& img {
+				max-width: 100%;
+				box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+			}
+		}
 	}
 }
 

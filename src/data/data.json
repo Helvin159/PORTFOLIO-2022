@@ -68,7 +68,7 @@
 		},
 		{
 			"projectName": "Blog by RollByADP",
-			"workDone": "Build a blog for RollbyADP.com",
+			"workDone": "I was the lead front-end developer on this project. We worked on this to implement Sitecore JSS for the site. Pixel perfect CSS matching perfectly with designs and responsive!",
 			"screenshot": "./assets/projects/project_two.png",
 			"languages": [
 				{ "lang": "JavaScript" },
@@ -85,8 +85,17 @@
 			"url": "https://blog.rollbyadp.com"
 		},
 		{
+			"projectName": "ADP.com (Content)",
+			"workDone": "I worked on content entry for this site on an international scale with Sitecore. We managed Chinese, Italian, German, and Swiss among other languages.",
+			"screenshot": "./assets/projects/project_five.png",
+			"languages": [{ "lang": "html5" }, { "lang": "CSS" }],
+			"frameworks": [],
+			"cms": ["Sitecore"],
+			"url": "https://ch.adp.com"
+		},
+		{
 			"projectName": "Criterion Ticketing",
-			"workDone": "Vue3 Project, building components and their functionality",
+			"workDone": "I worked as part of a team on this project. My responsibilities included building components assigned to me, testing component for the component, and the functionality of the component. We worked with Vue3 as a framework.",
 			"screenshot": "./assets/projects/project_four.png",
 			"languages": [
 				{ "lang": "JavaScript" },

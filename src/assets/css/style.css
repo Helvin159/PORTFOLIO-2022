@@ -33,6 +33,13 @@ li {
 .didot {
   font-family: didot; }
 
+main {
+  max-width: 1024px;
+  margin: 0 auto; }
+
+body {
+  background-color: #000000; }
+
 .nav__bar {
   background-color: #000;
   color: #f0ead6;
@@ -155,6 +162,18 @@ li {
       color: #f0ead6;
       text-decoration: underline; }
 
-.projects__cards {
-  padding: 3rem;
-  color: #f0ead6; }
+.projects {
+  padding: 1rem;
+  background-color: #000; }
+  .projects .row {
+    margin: 2.5rem auto;
+    border-radius: 5px;
+    background-color: #f0ead6; }
+  .projects__cards {
+    padding: 3rem; }
+    .projects__cards__card ul li {
+      display: inline-block;
+      padding-right: 10px; }
+    .projects__cards__card img {
+      max-width: 100%;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); }
