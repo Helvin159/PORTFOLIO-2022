@@ -13,7 +13,11 @@ const Header = ({ props }) => {
 							<p className='didot m-0'>
 								{props.nav_links.map(
 									(e, i) =>
-										e.url === '/' && <Link to='/'>{props.nick_name}</Link>
+										e.url === '/' && (
+											<Link to='/' key={`${i}-${props.nick_name}`}>
+												{props.nick_name}
+											</Link>
+										)
 								)}
 							</p>
 						</div>
@@ -23,7 +27,7 @@ const Header = ({ props }) => {
 							{props.nav_links.map(
 								(e, i) =>
 									e.url !== '/' && (
-										<li key={i} className='px-3'>
+										<li key={`${i}-${e.link_text}`} className='px-3'>
 											<Link to={e.url}>{e.link_text}</Link>
 										</li>
 									)

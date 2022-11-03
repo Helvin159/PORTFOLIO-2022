@@ -1,43 +1,60 @@
-import React, { Fragment } from 'react'
-import Row from 'react-bootstrap/Row'
+import React from 'react'
+import Container from 'react-bootstrap/Container'
+// import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import isOdd from '../../lib/isOdd'
 
 const ProjectsShowcase = ({ props }) => {
 	// console.log(props)
-	return (
-		<Row className='projects mx-auto'>
-			{props.projects.map((i, k) => (
-				<Fragment>
-					<style>{`
-						.card-${k}{
-							background: linear-gradient( 0deg, rgba(0,0,0,0.9), rgba(0,0,0,.9)), url(${i.screenshot});
-							background-size:cover;
-							background-position:center center;
-							background-repeat:no-repeat;
-						}
-					`}</style>
-					<Col sm={6} key={k} className={`projects__cards card-${k}`}>
-						<div className='projects__cards__card'>
-							<h3>{i.projectName}</h3>
-							{i.workDone !== '' && <p>{i.workDone}</p>}
-							{console.log(i)}
 
-							<ul>
-								{i.languages.map((i, k) => (
-									<li key={k}>{i.lang}</li>
-								))}
-							</ul>
-							{console.log(i)}
-							<div className='py-3'>
+	return (
+		<Container className='maxW1024 mx-auto' fluid>
+			<Container className='text-center egg-shell-font pt-3'>
+				<h2 className='font48'>Previous Projects</h2>
+			</Container>
+			<div className='projects mx-auto'>
+				{props.projects.map((i, k) => (
+					<div
+						key={k}
+						className={`${isOdd(k) ? 'row flex-row-reverse' : 'row'}`}>
+						<Col
+							sm={6}
+							key={`${k}-${i.projectName}`}
+							className={`projects__cards card-${k}`}>
+							<div className='projects__cards__card'>
 								<a href={i.url} target='_blank' rel='noreferrer'>
-									Visit site
+									<img
+										className='img-responsive'
+										alt={i.projectName}
+										src={i.screenshot}
+									/>
 								</a>
 							</div>
-						</div>
-					</Col>
-				</Fragment>
-			))}
-		</Row>
+						</Col>
+						<Col sm={6} key={`${k}`} className={`projects__cards`}>
+							<div className='projects__cards__card'>
+								<div className='text-center'>
+									<h3>{i.projectName}</h3>
+								</div>
+								<div>{i.workDone !== '' && <p>{i.workDone}</p>}</div>
+
+								<ul>
+									{i.languages.map((i, k) => (
+										<li key={k}>{i.lang}</li>
+									))}
+								</ul>
+
+								<div className='py-3'>
+									<a href={i.url} target='_blank' rel='noreferrer'>
+										Visit site
+									</a>
+								</div>
+							</div>
+						</Col>
+					</div>
+				))}
+			</div>
+		</Container>
 	)
 }
 

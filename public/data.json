@@ -56,6 +56,7 @@
 			"cms": ["Sitecore"],
 			"url": "https://rollbyadp.com"
 		},
+
 		{
 			"projectName": "Blog by RollByADP",
 			"workDone": "",
@@ -63,6 +64,15 @@
 			"frameworks": ["ReactJs", "Bootstrap", "Sitecore JSS"],
 			"cms": ["Sitecore"],
 			"url": "https://blog.rollbyadp.com"
+		},
+		{
+			"projectName": "ADP.com (Content)",
+			"workDone": "I worked on content entry for this site on an international scale with Sitecore. We managed Chinese, Italian, German, and Swiss among other languages.",
+			"screenshot": "./assets/projects/project_five.png",
+			"languages": [{ "lang": "html5" }, { "lang": "CSS" }],
+			"frameworks": [],
+			"cms": ["Sitecore"],
+			"url": "https://ch.adp.com"
 		},
 		{
 			"projectName": "Criterion Ticketing",
