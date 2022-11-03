@@ -22,11 +22,13 @@ const ProjectsShowcase = ({ props }) => {
 							key={`${k}-${i.projectName}`}
 							className={`projects__cards card-${k}`}>
 							<div className='projects__cards__card'>
-								<img
-									className='img-responsive'
-									alt={i.projectName}
-									src={i.screenshot}
-								/>
+								<a href={i.url} target='_blank' rel='noreferrer'>
+									<img
+										className='img-responsive'
+										alt={i.projectName}
+										src={i.screenshot}
+									/>
+								</a>
 							</div>
 						</Col>
 						<Col sm={6} key={`${k}`} className={`projects__cards`}>

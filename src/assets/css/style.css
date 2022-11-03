@@ -186,4 +186,9 @@ body {
       padding-right: 10px; }
     .projects__cards__card img {
       max-width: 100%;
-      box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); }
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+      object-fit: cover;
+      object-position: center;
+      transition: ease 0.35s; }
+    .projects__cards__card img:hover {
+      transform: scale(1.05); }
