@@ -10,7 +10,7 @@ const Outlet = ({ props }) => {
 			<main>
 				<Layout />
 			</main>
-			<Footer />
+			<Footer props={props} />
 		</Fragment>
 	)
 }
