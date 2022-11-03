@@ -36,6 +36,12 @@ li {
 .maxW1024 {
   max-width: 1024px; }
 
+.max-w-920 {
+  max-width: 920px; }
+
+.max-w-1024 {
+  max-width: 1024px; }
+
 .didot {
   font-family: didot; }
 
