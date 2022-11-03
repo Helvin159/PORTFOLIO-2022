@@ -1,9 +1,10 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
-import Header from './routes/Header/Header'
+// import Header from './components/Header/index'
 import Home from './routes/Home/Home'
 import About from './routes/About/About'
 import Work from './routes/Work/Work'
+import Outlet from './routes/Outlet/Outlet'
 
 // Data
 import data from './data/data.json'
@@ -39,7 +40,7 @@ const App = () => {
 
 	return (
 		<Routes>
-			<Route path='/' element={<Header props={data} />}>
+			<Route path='/' element={<Outlet props={data} />}>
 				<Route index element={<Home props={data} />} />
 				<Route path='/about' element={<About props={data} />} />
 				<Route path='/work' element={<Work props={data} />} />

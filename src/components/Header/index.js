@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { Outlet, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
@@ -36,9 +36,11 @@ const Header = ({ props }) => {
 					</Col>
 				</Row>
 			</header>
-			<main>
-				<Outlet />
-			</main>
+			{
+				// 	<main>
+				// 	<Outlet />
+				// </main>
+			}
 		</Fragment>
 	)
 }
