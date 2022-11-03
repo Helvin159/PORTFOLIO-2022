@@ -19,7 +19,6 @@ ul {
   padding: 0 0; }
 
 li {
-  display: inline-block;
   list-style-type: none; }
 
 .h-90vh {
@@ -38,6 +37,8 @@ li {
   background-color: #000;
   color: #f0ead6;
   font-size: 1.1rem; }
+  .nav__bar li {
+    display: inline-block; }
   .nav__bar .text-right {
     text-align: right; }
   .nav__bar a {
@@ -153,3 +154,7 @@ li {
     .hero__get__in__touch a:hover {
       color: #f0ead6;
       text-decoration: underline; }
+
+.projects__cards {
+  padding: 3rem;
+  color: #f0ead6; }
