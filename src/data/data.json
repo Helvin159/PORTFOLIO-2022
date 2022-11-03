@@ -35,7 +35,6 @@
 		{ "url": "/", "link_text": "Home" },
 		{ "url": "/work", "link_text": "Work" },
 		{ "url": "/about", "link_text": "About" },
-		{ "url": "/blog", "link_text": "Blog" },
 		{ "url": "/contact", "link_text": "Contact" }
 	],
 	"social_media": [
