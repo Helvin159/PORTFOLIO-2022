@@ -23,8 +23,11 @@ ul {
 }
 
 li {
-	display: inline-block;
 	list-style-type: none;
+}
+
+.font48 {
+	font-size: 48px;
 }
 
 .h-90vh {
@@ -39,7 +42,34 @@ li {
 	width: 100vw;
 }
 
+.maxW1024 {
+	max-width: 1024px;
+}
+
+.max-w-920 {
+	max-width: 920px;
+}
+
+.max-w-1024 {
+	max-width: 1024px;
+}
+
 .didot {
 	font-family: didot;
+}
+
+.egg-shell-font {
+	color: #f0ead6;
+}
+
+.egg-shell-background {
+	background: #f0ead6;
+}
+
+main {
+	margin: 0 auto;
+}
+body {
+	background-color: #000000;
 }
 

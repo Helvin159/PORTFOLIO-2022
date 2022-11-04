@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { Outlet, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
@@ -14,7 +14,7 @@ const Header = ({ props }) => {
 								{props.nav_links.map(
 									(e, i) =>
 										e.url === '/' && (
-											<Link to='/' key={i}>
+											<Link to='/' key={`${i}-${props.nick_name}`}>
 												{props.nick_name}
 											</Link>
 										)
@@ -27,7 +27,7 @@ const Header = ({ props }) => {
 							{props.nav_links.map(
 								(e, i) =>
 									e.url !== '/' && (
-										<li key={i} className='px-3'>
+										<li key={`${i}-${e.link_text}`} className='px-3'>
 											<Link to={e.url}>{e.link_text}</Link>
 										</li>
 									)
@@ -36,9 +36,11 @@ const Header = ({ props }) => {
 					</Col>
 				</Row>
 			</header>
-			<main>
-				<Outlet />
-			</main>
+			{
+				// 	<main>
+				// 	<Outlet />
+				// </main>
+			}
 		</Fragment>
 	)
 }

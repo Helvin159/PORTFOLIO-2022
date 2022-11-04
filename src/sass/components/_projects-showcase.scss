@@ -1,0 +1,32 @@
+.projects {
+	background-color: #000;
+	& .row {
+		margin: 2.5rem auto;
+		border-radius: 5px;
+		background-color: #f0ead6;
+	}
+	&__cards {
+		padding: 3rem;
+
+		&__card {
+			& ul {
+				& li {
+					display: inline-block;
+					padding-right: 10px;
+				}
+			}
+			& img {
+				max-width: 100%;
+				box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+				object-fit: cover;
+				object-position: center;
+				transition: ease 0.35s;
+			}
+
+			& img:hover {
+				transform: scale(1.05);
+			}
+		}
+	}
+}
+

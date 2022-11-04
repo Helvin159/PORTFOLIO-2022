@@ -8,7 +8,7 @@
 	"position": "Front End Developer",
 	"specialty": "ReactJS",
 	"short_about_me": "I am a web developer with nearly 4 years of experience developing high quality user interfaces. I've worked on testing, debuggin and researching new and current technologies and trends. I have a proven ability to build dynamic themes, write re-usable code and pay great attention to detail.",
-	"short_description": "I AM A WEB DEVELOPER WITH NEARLY 4 YEARS OF EXPERIENCE DEVELOPING HIGH QUALITY USER INTERFACES, TESTING, DEBUGGING AND RESEARCHING NEW & CURRENT TECHNOLOGIES, AND TRENDS. I HAVE A PROVEN ABILITY TO BUILD DYNAMIC THEMES, WRITE RE-USABLE CODE AND GREAT ATTENTION TO DETAIL WITH PIXEL PERFECT PROJECTS.",
+	"short_description": "",
 	"what_im_looking_for": "I am a web developer with nearly 4 years of experience developing high quality user interfaces. I've worked on testing, debuggin and researching new and current technologies and trends. I have a proven ability to build dynamic themes, write re-usable code and pay great attention to detail.",
 	"lang": [
 		{ "lng": "HTML", "length_of_experience": "", "expertise_level": "" },
@@ -35,6 +35,7 @@
 		{ "url": "/", "link_text": "Home" },
 		{ "url": "/work", "link_text": "Work" },
 		{ "url": "/about", "link_text": "About" },
+
 		{ "url": "/contact", "link_text": "Contact" }
 	],
 	"social_media": [
@@ -75,38 +76,18 @@
 	"projects": [
 		{
 			"projectName": "RollByADP",
-			"workDone": "Replatform an already existing site.",
-			"screenshot": "./assets/projects/project_one.png",
-			"languages": [
-				{ "lang": "JavaScript" },
-				{ "lang": "JQuery" },
-				{ "lang": "html5" },
-				{ "lang": "CSS" }
-			],
-			"frameworks": [
-				{ "framework": "ReactJs" },
-				{ "framework": "Vue3" },
-				{ "framework": "Bootstrap" },
-				{ "framework": "Sitecore JSS" }
-			],
+			"workDone": "",
+			"languages": ["JavaScript", "JQuery", "html5", "CSS"],
+			"frameworks": ["ReactJs", "Vue3", "Bootstrap", "Sitecore JSS"],
 			"cms": ["Sitecore"],
 			"url": "https://rollbyadp.com"
 		},
+
 		{
 			"projectName": "Blog by RollByADP",
-			"workDone": "I was the lead front-end developer on this project. We worked on this to implement Sitecore JSS for the site. Pixel perfect CSS matching perfectly with designs and responsive!",
-			"screenshot": "./assets/projects/project_two.png",
-			"languages": [
-				{ "lang": "JavaScript" },
-				{ "lang": "html5" },
-				{ "lang": "CSS" },
-				{ "lang": "SASS" }
-			],
-			"frameworks": [
-				{ "framework": "ReactJs" },
-				{ "framework": "Bootstrap" },
-				{ "framework": "Sitecore JSS" }
-			],
+			"workDone": "",
+			"languages": ["JavaScript", "html5", "CSS", "SASS"],
+			"frameworks": ["ReactJs", "Bootstrap", "Sitecore JSS"],
 			"cms": ["Sitecore"],
 			"url": "https://blog.rollbyadp.com"
 		},
@@ -121,26 +102,14 @@
 		},
 		{
 			"projectName": "Criterion Ticketing",
-			"workDone": "I worked as part of a team on this project. My responsibilities included building components assigned to me, testing component for the component, and the functionality of the component. We worked with Vue3 as a framework.",
-			"screenshot": "./assets/projects/project_four.png",
-			"languages": [
-				{ "lang": "JavaScript" },
-				{ "lang": "CSS" },
-				{ "lang": "html5" }
-			],
-			"frameworks": [{ "framework": "Vue3" }, { "framework": "Tailwind" }],
-			"cms": [],
+			"workDone": "",
+			"languages": "",
 			"url": "https://criterionticketing.com/"
 		},
 		{
 			"projectName": "Highland Home Loans",
 			"workDone": "",
-			"screenshot": "./assets/projects/project_three.png",
-			"languages": [
-				{ "lang": "JavaScript" },
-				{ "lang": "html5" },
-				{ "lang": "CSS" }
-			],
+			"languages": ["JavaScript", "html5", "CSS"],
 			"cms": ["Crownpeak"],
 			"url": "https://www.highlandhomeloans.com/"
 		}

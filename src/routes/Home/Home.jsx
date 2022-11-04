@@ -1,13 +1,11 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Hero from '../../components/Hero'
-import Projects from '../../components/Projects'
 
 const Home = ({ props }) => {
 	return (
-		<div>
+		<Fragment>
 			<Hero props={props} />
-			<Projects props={props} />
-		</div>
+		</Fragment>
 	)
 }
 
