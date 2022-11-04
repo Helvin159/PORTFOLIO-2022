@@ -45,8 +45,9 @@ const App = () => {
 					<Route index element={<Home props={MyData} />} />
 					<Route path='/about' element={<About props={MyData} />} />
 					<Route path='/work' element={<Work props={MyData} />} />
-					<Route path='/contact' element={<About props={MyData} />} />
-					<Route path='/blog' element={<About props={MyData} />} />
+					{
+						// <Route path='/contact' element={<About props={MyData} />} />
+					}
 				</Route>
 			</Routes>
 		)
