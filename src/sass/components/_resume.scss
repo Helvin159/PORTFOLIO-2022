@@ -8,6 +8,18 @@
 				& p {
 					line-height: 1.6;
 				}
+
+				&__title {
+					transition: ease 0.35s;
+					border-bottom: 1px solid #000;
+					border-width: 3px;
+					border-bottom-right-radius: 7px;
+				}
+
+				&__title:hover {
+					border-width: 5px;
+					transition: border-bottom ease-in 0.35s;
+				}
 			}
 		}
 	}
