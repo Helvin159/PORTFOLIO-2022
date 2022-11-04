@@ -54,22 +54,24 @@ const Hero = ({ props }) => {
 					<p>
 						<strong>SASS</strong>
 						<br />
-						Some work done
+						Great clean code!
 					</p>
 				</div>
 				<div className='hero__curved__bg__touts hero__curved__bg__touts__five'>
 					<p>
 						<strong>Class & Functional Components</strong>
 						<br />
-						Some work done
+						Flexible work for what is needed
 					</p>
 				</div>
 
-				<p className='hero__curved__bg__touts__six'>
-					<strong>Class & Functional Components</strong>
-					<br />
-					Some work done
-				</p>
+				<div className='hero__curved__bg__touts__six'>
+					<p>
+						<strong>GIT</strong>
+						<br />
+						Work with a team through version control
+					</p>
+				</div>
 			</div>
 		</Container>
 	)

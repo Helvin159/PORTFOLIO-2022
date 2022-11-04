@@ -4,7 +4,14 @@
 	padding: 2rem 0;
 
 	&__title h1 {
-		font-size: 6.1rem;
+		font-size: 4.5rem;
+		text-align: center;
+	}
+	@media (min-width: 768px) {
+		&__title h1 {
+			font-size: 6.1rem;
+			text-align: left;
+		}
 	}
 
 	&__curved__bg {

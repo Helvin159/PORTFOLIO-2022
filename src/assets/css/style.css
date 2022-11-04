@@ -51,6 +51,10 @@ footer {
 .didot {
   font-family: didot; }
 
+.didot-bold {
+  font-family: didot;
+  font-weight: 600; }
+
 .egg-shell-font {
   color: #f0ead6; }
 
@@ -90,7 +94,12 @@ body {
   color: #f0ead6;
   padding: 2rem 0; }
   .hero__title h1 {
-    font-size: 6.1rem; }
+    font-size: 4.5rem;
+    text-align: center; }
+  @media (min-width: 768px) {
+    .hero__title h1 {
+      font-size: 6.1rem;
+      text-align: left; } }
   .hero__curved__bg {
     background-color: #f0ead6;
     border-radius: 0% 18% 18% 0% / 10% 52% 52% 10%;
