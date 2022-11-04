@@ -212,7 +212,7 @@ body {
       transform: scale(1.05); }
 
 .resume__jobs__cards li {
-  padding-right: 0.75rem; }
+  padding-right: 0.5rem; }
 
 .resume__jobs__cards__card p {
   line-height: 1.6; }

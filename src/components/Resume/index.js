@@ -52,6 +52,7 @@ const Resume = ({ props }) => {
 								{props.skills.map((i, k) => (
 									<li key={k} className='d-inline-block'>
 										{i}
+										{k + 1 !== props.skills.length && ', '}
 									</li>
 								))}
 							</ul>
