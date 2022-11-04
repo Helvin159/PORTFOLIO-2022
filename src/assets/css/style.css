@@ -216,3 +216,13 @@ body {
 
 .resume__jobs__cards__card p {
   line-height: 1.6; }
+
+.resume__jobs__cards__card__title {
+  transition: ease 0.35s;
+  border-bottom: 1px solid #000;
+  border-width: 3px;
+  border-bottom-right-radius: 7px; }
+
+.resume__jobs__cards__card__title:hover {
+  border-width: 5px;
+  transition: border-bottom ease-in 0.35s; }

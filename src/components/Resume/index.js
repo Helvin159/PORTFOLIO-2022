@@ -14,14 +14,14 @@ const Resume = ({ props }) => {
 			}
 		`}
 			</style>
-			<Container className=' resume' fluid>
+			<Container className='resume pb-5' fluid>
 				<Container className='text-center py-4 mx-auto resume__header max-w-860'>
 					<h1 className='display-1 resume__header__title'>{props.name}</h1>
 					<p>{props.short_about_me}</p>
 				</Container>
-				<Row className='mx-auto max-w-1024 resume__jobs max-w-860'>
+				<Row className='mx-auto max-w-1024 resume__jobs max-w-860 px-sm-5'>
 					<Col className='resume__jobs__cards' sm={6}>
-						<h3>
+						<h3 className='resume__jobs__cards__card__title'>
 							<strong>Work History</strong>
 						</h3>
 						{props.jobs.map((i, k) => (
@@ -44,7 +44,7 @@ const Resume = ({ props }) => {
 							</div>
 						))}
 
-						<h3>
+						<h3 className='resume__jobs__cards__card__title'>
 							<strong>Skills</strong>
 						</h3>
 						<div className='resume__jobs__cards__card'>
@@ -58,7 +58,7 @@ const Resume = ({ props }) => {
 							</ul>
 						</div>
 
-						<h3>
+						<h3 className='resume__jobs__cards__card__title'>
 							<strong>Awards</strong>
 						</h3>
 						<div className='resume__jobs__cards__card'>
@@ -79,11 +79,11 @@ const Resume = ({ props }) => {
 						</div>
 					</Col>
 					<Col className='resume__jobs__cards' sm={6}>
-						<div className='resume__jobs__cards__card'>
-							<h3>
-								<strong>Education</strong>
-							</h3>
-							{props.education.map((i, k) => (
+						<h3 className='resume__jobs__cards__card__title'>
+							<strong>Education</strong>
+						</h3>
+						{props.education.map((i, k) => (
+							<div className='resume__jobs__cards__card'>
 								<div className='pb-4' key={k}>
 									<h4>{i.school}</h4>
 									<p className='mb-0'>
@@ -98,13 +98,13 @@ const Resume = ({ props }) => {
 										</p>
 									)}
 								</div>
-							))}
-						</div>
-						<div className='resume__jobs__cards__card'>
-							<h3>
-								<strong>Continuing Education</strong>
-							</h3>
-							{props.cont_education.map((i, k) => (
+							</div>
+						))}
+						<h3 className='resume__jobs__cards__card__title'>
+							<strong>Continuing Education</strong>
+						</h3>
+						{props.cont_education.map((i, k) => (
+							<div className='resume__jobs__cards__card'>
 								<div className='pb-4' key={k}>
 									<h4>{i.school}</h4>
 									<p className='mb-0'>
@@ -119,8 +119,8 @@ const Resume = ({ props }) => {
 										</p>
 									)}
 								</div>
-							))}
-						</div>
+							</div>
+						))}
 					</Col>
 				</Row>
 			</Container>
