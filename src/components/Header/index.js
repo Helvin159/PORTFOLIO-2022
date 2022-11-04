@@ -14,7 +14,10 @@ const Header = ({ props }) => {
 								{props.nav_links.map(
 									(e, i) =>
 										e.url === '/' && (
-											<Link to='/' key={`${i}-${props.nick_name}`}>
+											<Link
+												to='/'
+												key={`${i}-${props.nick_name}`}
+												className='display-6'>
 												{props.nick_name}
 											</Link>
 										)
@@ -22,7 +25,7 @@ const Header = ({ props }) => {
 							</p>
 						</div>
 					</Col>
-					<Col sm={6} className='text-center'>
+					<Col sm={6} className='text-center py-3'>
 						<ul>
 							{props.nav_links.map(
 								(e, i) =>
