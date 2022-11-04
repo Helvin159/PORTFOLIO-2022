@@ -36,7 +36,7 @@ const App = () => {
 		fetchedData()
 	}, [fetchedData])
 
-	console.log(MyData, 'mydata')
+	// console.log(MyData, 'mydata')
 
 	return (
 		<Routes>

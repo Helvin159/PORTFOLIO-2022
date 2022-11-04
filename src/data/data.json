@@ -8,7 +8,7 @@
 	"position": "Front End Developer",
 	"specialty": "ReactJS",
 	"short_about_me": "I am a web developer with nearly 4 years of experience developing high quality user interfaces. I've worked on testing, debuggin and researching new and current technologies and trends. I have a proven ability to build dynamic themes, write re-usable code and pay great attention to detail.",
-	"short_description": "",
+	"short_description": "I AM A WEB DEVELOPER WITH NEARLY 4 YEARS OF EXPERIENCE DEVELOPING HIGH QUALITY USER INTERFACES, TESTING, DEBUGGING AND RESEARCHING NEW & CURRENT TECHNOLOGIES, AND TRENDS. I HAVE A PROVEN ABILITY TO BUILD DYNAMIC THEMES, WRITE RE-USABLE CODE AND GREAT ATTENTION TO DETAIL WITH PIXEL PERFECT PROJECTS.",
 	"what_im_looking_for": "I am a web developer with nearly 4 years of experience developing high quality user interfaces. I've worked on testing, debuggin and researching new and current technologies and trends. I have a proven ability to build dynamic themes, write re-usable code and pay great attention to detail.",
 	"lang": [
 		{ "lng": "HTML", "length_of_experience": "", "expertise_level": "" },
@@ -45,6 +45,32 @@
 			"acctUrl": "www.linkedin.com/in/helvinrymer"
 		},
 		{ "platform": "Twitter", "user_name": "", "acctUrl": "" }
+	],
+	"jobs": [
+		{
+			"company": "iMedia Inc",
+			"position": "Front End Developer",
+			"summary": "",
+			"date_stared": "November, 2021",
+			"date_ended": "November, 2022",
+			"total_time": "1 Year"
+		},
+		{
+			"company": "MrRymer Freelance",
+			"position": "Full Stack Development",
+			"summary": "",
+			"date_stared": "February, 2020",
+			"date_ended": "November, 2021",
+			"total_time": "1 Year, 8 Months"
+		},
+		{
+			"company": "Trailways.com",
+			"position": "Front End Developer",
+			"summary": "",
+			"date_stared": "September, 2021",
+			"date_ended": "November, 2021",
+			"total_time": "3 Months"
+		}
 	],
 	"projects": [
 		{
