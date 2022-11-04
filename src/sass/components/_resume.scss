@@ -1,0 +1,15 @@
+.resume {
+	&__jobs {
+		&__cards {
+			& li {
+				padding-right: 0.75rem;
+			}
+			&__card {
+				& p {
+					line-height: 1.6;
+				}
+			}
+		}
+	}
+}
+
