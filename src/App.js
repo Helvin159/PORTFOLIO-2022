@@ -7,13 +7,13 @@ import Work from './routes/Work/Work'
 import Outlet from './routes/Outlet/Outlet'
 
 // Data
-import data from './data/data.json'
+// import data from './data/data.json'
 
 // Style
 import './assets/css/style.css'
 
 const App = () => {
-	const [MyData, setMyData] = useState([])
+	const [MyData, setMyData] = useState(null)
 
 	const fetchedData = useCallback(() => {
 		fetch('data.json', {
@@ -36,19 +36,21 @@ const App = () => {
 		fetchedData()
 	}, [fetchedData])
 
-	console.log(MyData, 'mydata')
+	// console.log(MyData, 'mydata')
 
-	return (
-		<Routes>
-			<Route path='/' element={<Outlet props={data} />}>
-				<Route index element={<Home props={data} />} />
-				<Route path='/about' element={<About props={data} />} />
-				<Route path='/work' element={<Work props={data} />} />
-				<Route path='/contact' element={<About props={data} />} />
-				<Route path='/blog' element={<About props={data} />} />
-			</Route>
-		</Routes>
-	)
+	if (MyData) {
+		return (
+			<Routes>
+				<Route path='/' element={<Outlet props={MyData} />}>
+					<Route index element={<Home props={MyData} />} />
+					<Route path='/about' element={<About props={MyData} />} />
+					<Route path='/work' element={<Work props={MyData} />} />
+					<Route path='/contact' element={<About props={MyData} />} />
+					<Route path='/blog' element={<About props={MyData} />} />
+				</Route>
+			</Routes>
+		)
+	}
 }
 
 export default App

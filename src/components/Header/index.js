@@ -36,11 +36,6 @@ const Header = ({ props }) => {
 					</Col>
 				</Row>
 			</header>
-			{
-				// 	<main>
-				// 	<Outlet />
-				// </main>
-			}
 		</Fragment>
 	)
 }

@@ -38,13 +38,22 @@
 		{ "url": "/contact", "link_text": "Contact" }
 	],
 	"social_media": [
-		{ "platform": "Instagram", "user_name": "", "acctUrl": "" },
+		{
+			"platform": "Instagram",
+			"user_name": "_mrrymer",
+			"acctUrl": "https://www.instagram.com/_mrrymer/"
+		},
 		{
 			"platform": "LinkedIn",
-			"user_name": "",
-			"acctUrl": "www.linkedin.com/in/helvinrymer"
+			"user_name": "helvinrymer",
+			"acctUrl": "https://www.linkedin.com/in/helvinrymer"
 		},
-		{ "platform": "Twitter", "user_name": "", "acctUrl": "" }
+		{ "platform": "Twitter", "user_name": "", "acctUrl": "" },
+		{
+			"platform": "Github",
+			"user_name": "Helvin159",
+			"acctUrl": "https://github.com/Helvin159"
+		}
 	],
 	"jobs": [
 		{
@@ -90,7 +99,7 @@
 			"school": "NYC College of Technology",
 			"school_location": "Brooklyn, NY",
 			"field_of_study": "Computer Information Systems",
-			"grad_date": "45 Credits"
+			"grad_date": "30 Credits"
 		},
 		{
 			"school": "The High School for Excellence",
