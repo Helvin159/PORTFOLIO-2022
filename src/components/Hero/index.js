@@ -9,20 +9,16 @@ const Hero = ({ props }) => {
 			fluid
 			className={`${props.first_name}-${props.last_name}-Portfolio hero`}>
 			<Container className='mx-auto max-w-1024'>
-				<Container className='hero__title mx-0 px-0 text-center'>
+				<Container className='hero__title mx-0 px-0'>
 					<h1 className=''>{props.position}</h1>
 				</Container>
 				<Row>
-					<Col sm={5}>
+					<Col sm={10}>
 						{props.short_about_me !== '' && (
 							<p className='hero__short__text'>{props.short_about_me}</p>
 						)}
 					</Col>
-					<Col sm={5}>
-						{props.short_about_me !== '' && (
-							<p className='hero__short__text'>{props.what_im_looking_for}</p>
-						)}
-					</Col>
+
 					<Col sm={2} className='hero__get__in__touch'>
 						<div>
 							{props.email_addy !== '' && (
