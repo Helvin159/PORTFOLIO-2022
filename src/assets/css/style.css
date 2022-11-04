@@ -75,6 +75,10 @@ body {
     color: #f0ead6;
     text-decoration: none; }
 
+.footer a {
+  color: #f0ead6;
+  text-decoration: none; }
+
 .footer__links__link {
   text-decoration: none; }
 
