@@ -47,6 +47,32 @@
 		},
 		{ "platform": "Twitter", "user_name": "", "acctUrl": "" }
 	],
+	"jobs": [
+		{
+			"company": "iMedia Inc",
+			"position": "Front End Developer",
+			"summary": "",
+			"date_stared": "November, 2021",
+			"date_ended": "November, 2022",
+			"total_time": "1 Year"
+		},
+		{
+			"company": "MrRymer Freelance",
+			"position": "Full Stack Development",
+			"summary": "",
+			"date_stared": "February, 2020",
+			"date_ended": "November, 2021",
+			"total_time": "1 Year, 8 Months"
+		},
+		{
+			"company": "Trailways.com",
+			"position": "Front End Developer",
+			"summary": "",
+			"date_stared": "September, 2021",
+			"date_ended": "November, 2021",
+			"total_time": "3 Months"
+		}
+	],
 	"projects": [
 		{
 			"projectName": "RollByADP",
