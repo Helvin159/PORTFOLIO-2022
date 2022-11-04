@@ -39,20 +39,24 @@
 	],
 	"social_media": [
 		{
-			"platform": "Instagram",
-			"user_name": "_mrrymer",
-			"acctUrl": "https://www.instagram.com/_mrrymer/"
-		},
-		{
 			"platform": "LinkedIn",
 			"user_name": "helvinrymer",
-			"acctUrl": "https://www.linkedin.com/in/helvinrymer"
+			"acct_url": "https://www.linkedin.com/in/helvinrymer"
 		},
-		{ "platform": "Twitter", "user_name": "", "acctUrl": "" },
 		{
 			"platform": "Github",
 			"user_name": "Helvin159",
-			"acctUrl": "https://github.com/Helvin159"
+			"acct_url": "https://github.com/Helvin159"
+		},
+		{
+			"platform": "Instagram",
+			"user_name": "_mrrymer",
+			"acct_url": "https://www.instagram.com/_mrrymer/"
+		},
+		{
+			"platform": "Twitter",
+			"user_name": "mr_rymer",
+			"acct_url": "https://twitter.com/mr_rymer"
 		}
 	],
 	"jobs": [
