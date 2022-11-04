@@ -8,8 +8,8 @@ const Hero = ({ props }) => {
 		<Container
 			fluid
 			className={`${props.first_name}-${props.last_name}-Portfolio hero`}>
-			<Container className='mx-auto'>
-				<Container className='hero__title mx-0 px-0'>
+			<Container className='mx-auto max-w-1024'>
+				<Container className='hero__title mx-0 px-0 text-center'>
 					<h1 className=''>{props.position}</h1>
 				</Container>
 				<Row>
