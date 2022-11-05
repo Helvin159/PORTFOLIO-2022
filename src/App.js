@@ -5,6 +5,7 @@ import Home from './routes/Home/Home'
 import About from './routes/About/About'
 import Work from './routes/Work/Work'
 import Outlet from './routes/Outlet/Outlet'
+import ScrollToTop from './lib/ScrollToTop'
 
 // Data
 // import data from './data/data.json'
@@ -40,16 +41,18 @@ const App = () => {
 
 	if (MyData) {
 		return (
-			<Routes>
-				<Route path='/' element={<Outlet props={MyData} />}>
-					<Route index element={<Home props={MyData} />} />
-					<Route path='/about' element={<About props={MyData} />} />
-					<Route path='/work' element={<Work props={MyData} />} />
-					{
-						// <Route path='/contact' element={<About props={MyData} />} />
-					}
-				</Route>
-			</Routes>
+			<ScrollToTop>
+				<Routes>
+					<Route path='/' element={<Outlet props={MyData} />}>
+						<Route index element={<Home props={MyData} />} />
+						<Route path='/about' element={<About props={MyData} />} />
+						<Route path='/work' element={<Work props={MyData} />} />
+						{
+							// <Route path='/contact' element={<About props={MyData} />} />
+						}
+					</Route>
+				</Routes>
+			</ScrollToTop>
 		)
 	}
 }

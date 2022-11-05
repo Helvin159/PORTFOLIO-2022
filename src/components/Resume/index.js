@@ -83,8 +83,8 @@ const Resume = ({ props }) => {
 							<strong>Education</strong>
 						</h3>
 						{props.education.map((i, k) => (
-							<div className='resume__jobs__cards__card'>
-								<div className='pb-4' key={k}>
+							<div className='resume__jobs__cards__card' key={k}>
+								<div className='pb-4'>
 									<h4>{i.school}</h4>
 									<p className='mb-0'>
 										<strong>Field of Study:</strong> {i.field_of_study}
@@ -104,8 +104,8 @@ const Resume = ({ props }) => {
 							<strong>Continuing Education</strong>
 						</h3>
 						{props.cont_education.map((i, k) => (
-							<div className='resume__jobs__cards__card'>
-								<div className='pb-4' key={k}>
+							<div className='resume__jobs__cards__card' key={k}>
+								<div className='pb-4'>
 									<h4>{i.school}</h4>
 									<p className='mb-0'>
 										<strong>Field of Study:</strong> {i.field_of_study}
