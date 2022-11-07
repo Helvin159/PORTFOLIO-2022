@@ -10,6 +10,3 @@ if(isset($_POST) && !empty($_POST)){
  ?>
 
 
-<script>
-    console.log('php accessed')
- </script>
