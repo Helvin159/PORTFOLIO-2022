@@ -153,17 +153,16 @@
 	"projects": [
 		{
 			"projectName": "RollByADP",
-			"workDone": "Replatform an already existing site.",
+			"workDone": "This was a fun project. I worked in a 3 person team to replatform this site from a static site to a dynamic react site. I mainly worked on building components out of the existing templates. I was handed the original base code, to read and refactor to work with react and individual components.",
 			"screenshot": "./assets/projects/project_one.png",
 			"languages": [
 				{ "lang": "JavaScript" },
 				{ "lang": "JQuery" },
-				{ "lang": "html5" },
+				{ "lang": "Html5" },
 				{ "lang": "CSS" }
 			],
 			"frameworks": [
 				{ "framework": "ReactJs" },
-				{ "framework": "Vue3" },
 				{ "framework": "Bootstrap" },
 				{ "framework": "Sitecore JSS" }
 			],
@@ -176,7 +175,7 @@
 			"screenshot": "./assets/projects/project_two.png",
 			"languages": [
 				{ "lang": "JavaScript" },
-				{ "lang": "html5" },
+				{ "lang": "Html5" },
 				{ "lang": "CSS" },
 				{ "lang": "SASS" }
 			],
@@ -192,7 +191,11 @@
 			"projectName": "ADP.com (Content)",
 			"workDone": "I worked on content entry for this site on an international scale with Sitecore. We managed Chinese, Italian, German, and Swiss among other languages.",
 			"screenshot": "./assets/projects/project_five.png",
-			"languages": [{ "lang": "html5" }, { "lang": "CSS" }],
+			"languages": [
+				{ "lang": "Html5" },
+				{ "lang": "CSS" },
+				{ "lang": "JavaScript" }
+			],
 			"frameworks": [],
 			"cms": ["Sitecore"],
 			"url": "https://ch.adp.com"
@@ -204,7 +207,7 @@
 			"languages": [
 				{ "lang": "JavaScript" },
 				{ "lang": "CSS" },
-				{ "lang": "html5" }
+				{ "lang": "Html5" }
 			],
 			"frameworks": [{ "framework": "Vue3" }, { "framework": "Tailwind" }],
 			"cms": [],
@@ -212,11 +215,11 @@
 		},
 		{
 			"projectName": "Highland Home Loans",
-			"workDone": "",
+			"workDone": "For this project, I was tasked with building the entire front end and functionality. I was given designs to follow and build in separate components. The project was transfered to Crownpeak CMS and templated.",
 			"screenshot": "./assets/projects/project_three.png",
 			"languages": [
 				{ "lang": "JavaScript" },
-				{ "lang": "html5" },
+				{ "lang": "Html5" },
 				{ "lang": "CSS" }
 			],
 			"cms": ["Crownpeak"],
