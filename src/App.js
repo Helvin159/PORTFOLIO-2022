@@ -6,9 +6,7 @@ import About from './routes/About/About'
 import Work from './routes/Work/Work'
 import Outlet from './routes/Outlet/Outlet'
 import ScrollToTop from './lib/ScrollToTop'
-
-// Data
-// import data from './data/data.json'
+import { getPortfolio } from './lib/firebase/firebase'
 
 // Style
 import './assets/css/style.css'
@@ -37,8 +35,6 @@ const App = () => {
 	useEffect(() => {
 		fetchedData()
 	}, [fetchedData])
-
-	// console.log(MyData, 'mydata')
 
 	if (MyData) {
 		return (

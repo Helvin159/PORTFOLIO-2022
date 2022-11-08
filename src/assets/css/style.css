@@ -78,6 +78,11 @@ body {
   .nav__bar a {
     color: #f0ead6;
     text-decoration: none; }
+  .nav__bar button {
+    background: none;
+    color: #f0ead6;
+    border: none;
+    font-size: 1.1rem; }
 
 .footer a {
   color: #f0ead6;

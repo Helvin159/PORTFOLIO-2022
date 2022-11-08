@@ -2,8 +2,13 @@ import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import { signInWithGooglePopup } from '../../lib/firebase/firebase'
 
 const Header = ({ props }) => {
+	const logGoogleUser = async () => {
+		const res = await signInWithGooglePopup()
+		console.log(res)
+	}
 	return (
 		<Fragment>
 			<header className='nav__bar'>
@@ -35,6 +40,9 @@ const Header = ({ props }) => {
 										</li>
 									)
 							)}
+							<li>
+								<button onClick={logGoogleUser}>Login</button>
+							</li>
 						</ul>
 					</Col>
 				</Row>
