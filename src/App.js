@@ -6,12 +6,11 @@ import About from './routes/About/About'
 import Work from './routes/Work/Work'
 import Outlet from './routes/Outlet/Outlet'
 import ScrollToTop from './lib/ScrollToTop'
-
-// Data
-// import data from './data/data.json'
+import { getPortfolio } from './lib/firebase/firebase'
 
 // Style
 import './assets/css/style.css'
+import Contact from './routes/Contact/Contact'
 
 const App = () => {
 	const [MyData, setMyData] = useState(null)
@@ -37,8 +36,6 @@ const App = () => {
 		fetchedData()
 	}, [fetchedData])
 
-	// console.log(MyData, 'mydata')
-
 	if (MyData) {
 		return (
 			<ScrollToTop>
@@ -47,9 +44,7 @@ const App = () => {
 						<Route index element={<Home props={MyData} />} />
 						<Route path='/about' element={<About props={MyData} />} />
 						<Route path='/work' element={<Work props={MyData} />} />
-						{
-							// <Route path='/contact' element={<About props={MyData} />} />
-						}
+						<Route path='/contact' element={<Contact props={MyData} />} />
 					</Route>
 				</Routes>
 			</ScrollToTop>
