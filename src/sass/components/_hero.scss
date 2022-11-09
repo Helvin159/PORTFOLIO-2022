@@ -35,9 +35,14 @@
 			);
 		background-size: 80px 80px;
 
+		@media (max-width: 360px) {
+			display: none;
+		}
+
 		& img {
 			display: block;
 			position: relative;
+			overflow: hidden;
 		}
 
 		@media (max-width: 767px) {
@@ -57,7 +62,13 @@
 			& img {
 				max-width: 100%;
 				left: -14%;
-				overflow: hidden;
+			}
+		}
+
+		@media (max-width: 412px) {
+			& img {
+				max-width: 115%;
+				left: -25%;
 			}
 		}
 
@@ -253,8 +264,8 @@
 			}
 
 			& img {
-				left: 23%;
-				max-width: 50%;
+				left: 27%;
+				max-width: 40.5%;
 			}
 		}
 	}
