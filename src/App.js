@@ -10,7 +10,7 @@ import ScrollToTop from './lib/ScrollToTop'
 
 // Style
 import './assets/css/style.css'
-import Contact from './routes/Contact/Contact'
+// import Contact from './routes/Contact/Contact'
 
 const App = () => {
 	const [MyData, setMyData] = useState(null)
