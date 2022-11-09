@@ -2,6 +2,7 @@ import React from 'react'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import heroImg from '../../assets/images/hero/Helvin_profile_bw.svg'
 
 const Hero = ({ props }) => {
 	return (
@@ -50,6 +51,8 @@ const Hero = ({ props }) => {
 						Agile team work flow experience
 					</p>
 				</div>
+
+				<img src={heroImg} alt='hero img' className='img-responsive' />
 				<div className='hero__curved__bg__touts hero__curved__bg__touts__four'>
 					<p>
 						<strong>SASS</strong>

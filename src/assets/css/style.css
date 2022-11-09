@@ -117,11 +117,18 @@ body {
     opacity: 1;
     background-image: linear-gradient(rgba(13, 15, 49, 0.5) 1px, transparent 2.3px), linear-gradient(to right, rgba(13, 15, 49, 0.5) 1px, #f0ead6 2.3px);
     background-size: 80px 80px; }
+    .hero__curved__bg img {
+      display: block;
+      position: relative; }
     @media (max-width: 767px) {
       .hero__curved__bg__touts {
         display: none; }
         .hero__curved__bg__touts__one, .hero__curved__bg__touts__two, .hero__curved__bg__touts__three, .hero__curved__bg__touts__four, .hero__curved__bg__touts__five, .hero__curved__bg__touts__six {
-          display: none; } }
+          display: none; }
+      .hero__curved__bg img {
+        max-width: 100%;
+        left: -14%;
+        overflow: hidden; } }
     @media (min-width: 768px) {
       .hero__curved__bg__touts {
         padding: 1.5rem 0; }
@@ -179,7 +186,7 @@ body {
         .hero__curved__bg__touts__five {
           position: absolute;
           top: 35%;
-          right: 5%;
+          right: 0%;
           color: #000;
           width: 12rem;
           padding: 1rem;
@@ -190,14 +197,18 @@ body {
         .hero__curved__bg__touts__six {
           position: absolute;
           top: 65%;
-          right: 15%;
+          right: 10%;
           color: #000;
           width: 13rem;
           padding: 1rem;
           border-radius: 15% 85% 36% 64% / 81% 16% 84% 19%;
           background-color: #1aed16;
           transform: rotateZ(7deg) translateY(4rem) translateX(-2rem);
-          box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); } }
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); }
+      .hero__curved__bg img {
+        max-width: 54%;
+        left: 14%;
+        overflow: hidden; } }
     @media (min-width: 1024px) {
       .hero__curved__bg__touts {
         padding: 1.5rem 0; }
@@ -244,7 +255,7 @@ body {
         .hero__curved__bg__touts__four {
           position: absolute;
           top: 5%;
-          right: 20%;
+          right: 12%;
           color: #000;
           width: 10rem;
           padding: 1rem;
@@ -254,8 +265,8 @@ body {
           box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); }
         .hero__curved__bg__touts__five {
           position: absolute;
-          top: 35%;
-          right: 15%;
+          top: 30%;
+          right: 4%;
           color: #000;
           width: 12rem;
           padding: 1rem;
@@ -266,14 +277,17 @@ body {
         .hero__curved__bg__touts__six {
           position: absolute;
           top: 65%;
-          right: 20%;
+          right: 9%;
           color: #000;
           width: 13rem;
           padding: 1rem;
           border-radius: 15% 85% 36% 64% / 81% 16% 84% 19%;
           background-color: #1aed16;
           transform: rotateZ(7deg) translateY(4rem) translateX(-2rem);
-          box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); } }
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); }
+      .hero__curved__bg img {
+        left: 23%;
+        max-width: 50%; } }
   .hero__get__in__touch {
     align-items: center;
     justify-content: center;
