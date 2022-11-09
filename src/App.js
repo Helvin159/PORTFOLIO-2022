@@ -6,7 +6,7 @@ import About from './routes/About/About'
 import Work from './routes/Work/Work'
 import Outlet from './routes/Outlet/Outlet'
 import ScrollToTop from './lib/ScrollToTop'
-import { getPortfolio } from './lib/firebase/firebase'
+// import { getPortfolio } from './lib/firebase/firebase'
 
 // Style
 import './assets/css/style.css'

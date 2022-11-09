@@ -10,10 +10,10 @@ import {
 	doc,
 	getDoc,
 	setDoc,
-	collection,
-	writeBatch,
-	query,
-	getDocs,
+	// collection,
+	// writeBatch,
+	// query,
+	// getDocs,
 } from 'firebase/firestore'
 
 // Config
@@ -28,15 +28,47 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const firebaseApp = initializeApp(firebaseConfig)
+console.log(firebaseApp)
 
-const provider = new GoogleAuthProvider()
+const googleProvider = new GoogleAuthProvider()
 
-provider.setCustomParameters({
+googleProvider.setCustomParameters({
 	prompt: 'select_account',
 })
 
 export const auth = getAuth()
-export const signInWithGooglePopup = () => signInWithPopup(auth, provider)
+export const signInWithGooglePopup = () => signInWithPopup(auth, googleProvider)
+export const signInWithGoogleRedirect = () =>
+	signInWithRedirect(auth, googleProvider)
+
+export const db = getFirestore()
+
+export const createUserDocumentFromAuth = async (userAuth) => {
+	const userDocumentRef = doc(db, 'users', userAuth.uid)
+	console.log(userDocumentRef)
+
+	const userSnapshot = await getDoc(userDocumentRef)
+
+	console.log(userSnapshot)
+	console.log(userSnapshot.exists(), 'exists')
+
+	if (!userSnapshot.exists()) {
+		const { displayName, email } = userAuth
+		const createdAt = new Date()
+
+		try {
+			await setDoc(userDocumentRef, {
+				displayName,
+				email,
+				createdAt,
+			})
+		} catch (err) {
+			console.log(err, 'error')
+		}
+	}
+
+	return userDocumentRef
+}
 
 // export const db = getFirestore()
 

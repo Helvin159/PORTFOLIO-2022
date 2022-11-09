@@ -1,14 +1,38 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect } from 'react'
+import { getRedirectResult } from 'firebase/auth'
 import { Link } from 'react-router-dom'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import { signInWithGooglePopup } from '../../lib/firebase/firebase'
+import {
+	auth,
+	signInWithGooglePopup,
+	// signInWithGoogleRedirect,
+	createUserDocumentFromAuth,
+} from '../../lib/firebase/firebase'
 
 const Header = ({ props }) => {
+	useEffect(() => {
+		const fetchData = async () => {
+			const res = await getRedirectResult(auth)
+			console.log(res)
+			if (res) {
+				const userDocRef = await createUserDocumentFromAuth(res.user)
+				console.log(userDocRef)
+			}
+		}
+
+		fetchData()
+	}, [])
+
 	const logGoogleUser = async () => {
-		const res = await signInWithGooglePopup()
-		console.log(res)
+		const { user } = await signInWithGooglePopup()
+		console.log(user)
+		const userDocRef = await createUserDocumentFromAuth(user)
+		console.log(userDocRef)
 	}
+
+	console.log(logGoogleUser)
+
 	return (
 		<Fragment>
 			<header className='nav__bar'>
@@ -41,7 +65,10 @@ const Header = ({ props }) => {
 									)
 							)}
 							<li>
-								<button onClick={logGoogleUser}>Login</button>
+								{
+									// <button onClick={logGoogleUser}>Login</button>
+									// <button onClick={signInWithGoogleRedirect}>Login</button>
+								}
 							</li>
 						</ul>
 					</Col>
