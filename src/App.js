@@ -10,7 +10,7 @@ import ScrollToTop from './lib/ScrollToTop'
 
 // Style
 import './assets/css/style.css'
-import Contact from './routes/Contact/Contact'
+// import Contact from './routes/Contact/Contact'
 
 const App = () => {
 	const [MyData, setMyData] = useState(null)
@@ -44,7 +44,9 @@ const App = () => {
 						<Route index element={<Home props={MyData} />} />
 						<Route path='/about' element={<About props={MyData} />} />
 						<Route path='/work' element={<Work props={MyData} />} />
-						<Route path='/contact' element={<Contact props={MyData} />} />
+						{
+							// <Route path='/contact' element={<Contact props={MyData} />} />
+						}
 					</Route>
 				</Routes>
 			</ScrollToTop>
