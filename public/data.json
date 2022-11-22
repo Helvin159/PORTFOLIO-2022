@@ -57,6 +57,11 @@
 			"platform": "Twitter",
 			"user_name": "mr_rymer",
 			"acct_url": "https://twitter.com/mr_rymer"
+		},
+		{
+			"platform": "TripleByte",
+			"user_name": "Helvin Rymer",
+			"acct_url": "https://triplebyte.com/tb/helvin-rymer-ueo1238"
 		}
 	],
 	"jobs": [
