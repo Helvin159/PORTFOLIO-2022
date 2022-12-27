@@ -187,6 +187,21 @@
 			"url": "https://writer.mrrymer.tech"
 		},
 		{
+			"projectName": "College Template",
+			"workDone": "This is a theme I built in my personal time. Someone had reached out to me to build this theme, though at the time, I wasn't sure I could build such a theme. I took to build it for my own confidence, and now I have this theme.",
+			"screenshot": "./assets/projects/project_nine.png",
+			"languages": [
+				{ "lang": "JavaScript" },
+				{ "lang": "JQuery" },
+				{ "lang": "Php" },
+				{ "lang": "Html5" },
+				{ "lang": "CSS" }
+			],
+			"frameworks": [{ "framework": "Wordpress" }],
+			"cms": ["Wordpress"],
+			"url": "https://college.mrrymer.tech"
+		},
+		{
 			"projectName": "MrRymer on Wordpress",
 			"workDone": "This is my portfolio, hosted on Bluehost with Wordpress CMS. I built this theme, and am currently thinking of making some updates to it, or just build a new theme entirely similar to a theme I'm experimenting with at beeyouink.mrrymer.tech",
 			"screenshot": "./assets/projects/project_six.png",
