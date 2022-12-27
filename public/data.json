@@ -4,7 +4,7 @@
 	"first_name": "Helvin",
 	"last_name": "Rymer",
 	"prefix": "Mr.",
-	"email_addy": "helvin159@gmail.com",
+	"email_addy": "helvin@MrRymer.tech",
 	"position": "Front End Developer",
 	"specialty": "ReactJS",
 	"short_about_me": "I am a web developer with over 3 years of experience developing high quality user interfaces. I've worked on testing, debuggin and researching new and current technologies and trends. I have a proven ability to build dynamic themes, write re-usable code and pay great attention to detail.",
@@ -156,6 +156,36 @@
 		}
 	],
 	"projects": [
+		{
+			"projectName": "Bee You Ink \n (In Progress)",
+			"workDone": "This is an experimental Wordpress instance that I'm working on. I really liked the way components were setup on the Sitecore CMS while working with my previous employer. I'm attempting to create a similar user experience here with the CMS. The site is built in Php and Javascript. The page is broken into React components, and are organized in the Page Post type, and provided data through the selected post items to include in the components.",
+			"screenshot": "./assets/projects/project_seven.png",
+			"languages": [
+				{ "lang": "JavaScript" },
+				{ "lang": "JQuery" },
+				{ "lang": "Php" },
+				{ "lang": "Html5" },
+				{ "lang": "CSS" }
+			],
+			"frameworks": [{ "framework": "Wordpress" }, { "framework": "ReactJs" }],
+			"cms": ["Wordpress"],
+			"url": "https://beeyouink.mrrymer.tech"
+		},
+		{
+			"projectName": "MrRymer on Wordpress",
+			"workDone": "This is my portfolio, hosted on Bluehost with Wordpress CMS. I built this theme, and am currently thinking of making some updates to it, or just build a new theme entirely similar to a theme I'm experimenting with at beeyouink.mrrymer.tech",
+			"screenshot": "./assets/projects/project_six.png",
+			"languages": [
+				{ "lang": "JavaScript" },
+				{ "lang": "JQuery" },
+				{ "lang": "Php" },
+				{ "lang": "Html5" },
+				{ "lang": "CSS" }
+			],
+			"frameworks": [{ "framework": "Wordpress" }],
+			"cms": ["Wordpress"],
+			"url": "https://mrrymer.tech"
+		},
 		{
 			"projectName": "RollByADP",
 			"workDone": "This was a fun project. I worked in a 3 person team to replatform this site from a static site to a dynamic react site. I mainly worked on building components out of the existing templates. I was handed the original base code, to read and refactor to work with react and individual components.",
