@@ -172,6 +172,21 @@
 			"url": "https://beeyouink.mrrymer.tech"
 		},
 		{
+			"projectName": "Writer Template",
+			"workDone": "This is a theme I built in my personal time. I think it would go very well with a writer",
+			"screenshot": "./assets/projects/project_eight.png",
+			"languages": [
+				{ "lang": "JavaScript" },
+				{ "lang": "JQuery" },
+				{ "lang": "Php" },
+				{ "lang": "Html5" },
+				{ "lang": "CSS" }
+			],
+			"frameworks": [{ "framework": "Wordpress" }],
+			"cms": ["Wordpress"],
+			"url": "https://writer.mrrymer.tech"
+		},
+		{
 			"projectName": "MrRymer on Wordpress",
 			"workDone": "This is my portfolio, hosted on Bluehost with Wordpress CMS. I built this theme, and am currently thinking of making some updates to it, or just build a new theme entirely similar to a theme I'm experimenting with at beeyouink.mrrymer.tech",
 			"screenshot": "./assets/projects/project_six.png",
