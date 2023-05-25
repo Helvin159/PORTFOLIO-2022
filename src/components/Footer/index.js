@@ -1,12 +1,12 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import Container from 'react-bootstrap/Container'
-
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Container from 'react-bootstrap/Container';
+import { nav_links } from '../../data/data';
 const Footer = ({ props }) => {
 	return (
 		<footer className='footer py-3'>
 			<Container className='text-center mx-auto max-w-1024 footer__links py-2'>
-				{props.nav_links.map((e, i) => (
+				{nav_links.map((e, i) => (
 					<Link
 						to={e.url}
 						className='px-3 egg-shell-font footer__links__link'
@@ -28,8 +28,7 @@ const Footer = ({ props }) => {
 				))}
 			</Container>
 		</footer>
-	)
-}
+	);
+};
 
-export default Footer
-
+export default Footer;

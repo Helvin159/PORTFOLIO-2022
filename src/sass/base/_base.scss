@@ -3,6 +3,10 @@
 	src: url('../../assets/GFS_Didot/GFSDidot-Regular.ttf') format('truetype');
 }
 
+* {
+	box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -85,4 +89,3 @@ main {
 body {
 	background-color: #000000;
 }
-

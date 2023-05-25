@@ -1,7 +1,7 @@
-import React, { Fragment } from 'react'
-import { Outlet as Layout } from 'react-router-dom'
-import Header from '../../components/Header/index'
-import Footer from '../../components/Footer/index'
+import React, { Fragment } from 'react';
+import { Outlet as Layout } from 'react-router-dom';
+import Header from '../../components/Header/index';
+import Footer from '../../components/Footer/index';
 
 const Outlet = ({ props }) => {
 	return (
@@ -12,8 +12,7 @@ const Outlet = ({ props }) => {
 			</main>
 			<Footer props={props} />
 		</Fragment>
-	)
-}
+	);
+};
 
-export default Outlet
-
+export default Outlet;

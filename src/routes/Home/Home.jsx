@@ -1,13 +1,15 @@
-import React, { Fragment } from 'react'
-import Hero from '../../components/Hero'
+import React, { Fragment, useContext } from 'react';
+import Hero from '../../components/Hero';
+import { PortfolioContext } from '../../contexts/portfolioProvider';
 
-const Home = ({ props }) => {
+const Home = () => {
+	const { portfolio } = useContext(PortfolioContext);
+
 	return (
 		<Fragment>
-			<Hero props={props} />
+			<Hero props={portfolio} />
 		</Fragment>
-	)
-}
+	);
+};
 
-export default Home
-
+export default Home;

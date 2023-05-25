@@ -1,9 +1,22 @@
-import React, { Fragment } from 'react'
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
+import React, { Fragment, useContext } from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import { PortfolioContext } from '../../contexts/portfolioProvider';
 
-const Resume = ({ props }) => {
+const Resume = () => {
+	const { portfolio } = useContext(PortfolioContext);
+
+	const {
+		name,
+		short_about_me,
+		skills,
+		awards,
+		education,
+		cont_education,
+		employers,
+	} = portfolio;
+
 	return (
 		<Fragment>
 			<style>
@@ -16,15 +29,15 @@ const Resume = ({ props }) => {
 			</style>
 			<Container className='resume pb-5' fluid>
 				<Container className='text-center py-4 mx-auto resume__header max-w-860'>
-					<h1 className='display-1 resume__header__title'>{props.name}</h1>
-					<p>{props.short_about_me}</p>
+					<h1 className='display-1 resume__header__title'>{name}</h1>
+					<p>{short_about_me}</p>
 				</Container>
 				<Row className='mx-auto max-w-1024 resume__jobs max-w-860 px-sm-5'>
 					<Col className='resume__jobs__cards' sm={6}>
 						<h3 className='resume__jobs__cards__card__title'>
 							<strong>Work History</strong>
 						</h3>
-						{props.jobs.map((i, k) => (
+						{employers.map((i, k) => (
 							<div className='resume__jobs__cards__card pb-4' key={k}>
 								<h4>{i.company}</h4>
 								<p className='mb-2'>
@@ -49,10 +62,10 @@ const Resume = ({ props }) => {
 						</h3>
 						<div className='resume__jobs__cards__card'>
 							<ul className='pb-4'>
-								{props.skills.map((i, k) => (
+								{skills.map((i, k) => (
 									<li key={k} className='d-inline-block'>
 										{i}
-										{k + 1 !== props.skills.length && ', '}
+										{k + 1 !== skills.length && ', '}
 									</li>
 								))}
 							</ul>
@@ -62,7 +75,7 @@ const Resume = ({ props }) => {
 							<strong>Awards</strong>
 						</h3>
 						<div className='resume__jobs__cards__card'>
-							{props.awards.map((i, k) => (
+							{awards.map((i, k) => (
 								<div key={k} className='pb-4'>
 									<h4>
 										<strong> {i.award}</strong>
@@ -82,7 +95,7 @@ const Resume = ({ props }) => {
 						<h3 className='resume__jobs__cards__card__title'>
 							<strong>Education</strong>
 						</h3>
-						{props.education.map((i, k) => (
+						{education.map((i, k) => (
 							<div className='resume__jobs__cards__card' key={k}>
 								<div className='pb-4'>
 									<h4>{i.school}</h4>
@@ -103,7 +116,7 @@ const Resume = ({ props }) => {
 						<h3 className='resume__jobs__cards__card__title'>
 							<strong>Continuing Education</strong>
 						</h3>
-						{props.cont_education.map((i, k) => (
+						{cont_education.map((i, k) => (
 							<div className='resume__jobs__cards__card' key={k}>
 								<div className='pb-4'>
 									<h4>{i.school}</h4>
@@ -125,8 +138,7 @@ const Resume = ({ props }) => {
 				</Row>
 			</Container>
 		</Fragment>
-	)
-}
+	);
+};
 
-export default Resume
-
+export default Resume;

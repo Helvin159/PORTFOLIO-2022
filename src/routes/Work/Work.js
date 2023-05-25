@@ -1,13 +1,18 @@
-import React, { Fragment } from 'react'
-import ProjectsShowcase from '../../components/ProjectsShowcase'
+import React, { useContext } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import { ProjectsContext } from '../../contexts/projectsContext';
+import ProjectsShowcase from '../../components/ProjectsShowcase';
+import Project from '../Project/Project';
 
-const Work = ({ props }) => {
+const Work = () => {
+	const { projects } = useContext(ProjectsContext);
+
 	return (
-		<Fragment>
-			<ProjectsShowcase props={props} />
-		</Fragment>
-	)
-}
+		<Routes>
+			<Route index element={<ProjectsShowcase props={projects} />} />
+			<Route path=':project' element={<Project />} />
+		</Routes>
+	);
+};
 
-export default Work
-
+export default Work;

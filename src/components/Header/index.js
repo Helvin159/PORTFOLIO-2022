@@ -1,38 +1,10 @@
-import React, { Fragment, useEffect } from 'react'
-import { getRedirectResult } from 'firebase/auth'
-import { Link } from 'react-router-dom'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import {
-	auth,
-	signInWithGooglePopup,
-	// signInWithGoogleRedirect,
-	createUserDocumentFromAuth,
-} from '../../lib/firebase/firebase'
+import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import { nav_links } from '../../data/data';
 
 const Header = ({ props }) => {
-	useEffect(() => {
-		const fetchData = async () => {
-			const res = await getRedirectResult(auth)
-			console.log(res)
-			if (res) {
-				const userDocRef = await createUserDocumentFromAuth(res.user)
-				console.log(userDocRef)
-			}
-		}
-
-		fetchData()
-	}, [])
-
-	const logGoogleUser = async () => {
-		const { user } = await signInWithGooglePopup()
-		console.log(user)
-		const userDocRef = await createUserDocumentFromAuth(user)
-		console.log(userDocRef)
-	}
-
-	console.log(logGoogleUser)
-
 	return (
 		<Fragment>
 			<header className='nav__bar'>
@@ -40,7 +12,7 @@ const Header = ({ props }) => {
 					<Col sm={6} className='text-center'>
 						<div>
 							<p className='didot m-0'>
-								{props.nav_links.map(
+								{nav_links.map(
 									(e, i) =>
 										e.url === '/' && (
 											<Link
@@ -56,7 +28,7 @@ const Header = ({ props }) => {
 					</Col>
 					<Col sm={6} className='text-center py-3'>
 						<ul>
-							{props.nav_links.map(
+							{nav_links.map(
 								(e, i) =>
 									e.url !== '/' && (
 										<li key={`${i}-${e.link_text}`} className='px-3'>
@@ -64,19 +36,12 @@ const Header = ({ props }) => {
 										</li>
 									)
 							)}
-							<li>
-								{
-									// <button onClick={logGoogleUser}>Login</button>
-									// <button onClick={signInWithGoogleRedirect}>Login</button>
-								}
-							</li>
 						</ul>
 					</Col>
 				</Row>
 			</header>
 		</Fragment>
-	)
-}
+	);
+};
 
-export default Header
-
+export default Header;

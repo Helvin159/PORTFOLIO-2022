@@ -1,20 +1,18 @@
-import { initializeApp } from 'firebase/app'
+import { initializeApp } from 'firebase/app';
 import {
 	getAuth,
 	signInWithRedirect,
 	signInWithPopup,
 	GoogleAuthProvider,
-} from 'firebase/auth'
+} from 'firebase/auth';
 import {
 	getFirestore,
 	doc,
-	getDoc,
-	setDoc,
-	// collection,
-	// writeBatch,
-	// query,
-	// getDocs,
-} from 'firebase/firestore'
+	collection,
+	writeBatch,
+	query,
+	getDocs,
+} from 'firebase/firestore';
 
 // Config
 const firebaseConfig = {
@@ -24,65 +22,67 @@ const firebaseConfig = {
 	storageBucket: 'portfolio-db-b6a63.appspot.com',
 	messagingSenderId: '111183607612',
 	appId: '1:111183607612:web:cb965927f9a9c1cfd65039',
-}
+};
 
 // Initialize Firebase
-const firebaseApp = initializeApp(firebaseConfig)
-console.log(firebaseApp)
-
-const googleProvider = new GoogleAuthProvider()
-
+const firebaseApp = initializeApp(firebaseConfig);
+const googleProvider = new GoogleAuthProvider();
 googleProvider.setCustomParameters({
 	prompt: 'select_account',
-})
+});
 
-export const auth = getAuth()
-export const signInWithGooglePopup = () => signInWithPopup(auth, googleProvider)
+export const auth = getAuth();
+export const signInWithGooglePopup = () =>
+	signInWithPopup(auth, googleProvider);
 export const signInWithGoogleRedirect = () =>
-	signInWithRedirect(auth, googleProvider)
+	signInWithRedirect(auth, googleProvider);
 
-export const db = getFirestore()
+// Gets reference of firesotre db
+export const db = getFirestore();
 
-export const createUserDocumentFromAuth = async (userAuth) => {
-	const userDocumentRef = doc(db, 'users', userAuth.uid)
-	console.log(userDocumentRef)
+// Add data to Firestroe Database
+export const addCollectionAndDocs = async (collectionKey, objectsToAdd) => {
+	const collectionRef = collection(db, collectionKey);
+	const batch = writeBatch(db);
 
-	const userSnapshot = await getDoc(userDocumentRef)
+	objectsToAdd.forEach((obj) => {
+		const docRef = doc(collectionRef, obj.name.toLowerCase());
+		batch.set(docRef, obj);
+	});
 
-	console.log(userSnapshot)
-	console.log(userSnapshot.exists(), 'exists')
+	await batch.commit();
+};
 
-	if (!userSnapshot.exists()) {
-		const { displayName, email } = userAuth
-		const createdAt = new Date()
+export const getPortfolioData = async () => {
+	const collectionRef = collection(db, 'portfolio-info');
+	const q = query(collectionRef);
 
-		try {
-			await setDoc(userDocumentRef, {
-				displayName,
-				email,
-				createdAt,
-			})
-		} catch (err) {
-			console.log(err, 'error')
-		}
-	}
+	const querySnapshot = await getDocs(q);
 
-	return userDocumentRef
-}
+	const portfolioMap = querySnapshot.docs.reduce((acc, docSnapshot) => {
+		const snap = docSnapshot.data();
 
-// export const db = getFirestore()
+		return snap;
+	}, {});
 
-// export const getPortfolio = async () => {
-// 	const collectionRef = collection(db, 'portfolio')
-// 	const q = query(collectionRef)
+	return portfolioMap;
+};
 
-// 	const querySnapshot = await getDocs(q)
-// 	const portfolioMap = querySnapshot.docs.reduce((acc, docSnapshot) => {
-// 		const { name, first_name } = docSnapshot.data()
-// 		acc[name.toLowerCase()] = first_name
-// 		return acc
-// 	}, {})
+export const getProjectsData = async () => {
+	const collectionRef = collection(db, 'projects');
+	const q = query(collectionRef);
 
-// 	return portfolioMap
-// }
-
+	const querySnapshot = await getDocs(q);
+	const arr = [];
+	const projectMap = querySnapshot.docs.reduce((acc, docSnapshot) => {
+		const { projectName } = docSnapshot.data();
+		const slug = projectName.replace(/\s/g, '').replace('.', '').toLowerCase();
+		acc = {
+			...docSnapshot.data(),
+			slug,
+		};
+		arr.push(acc);
+		return arr;
+	}, {});
+	return projectMap;
+};

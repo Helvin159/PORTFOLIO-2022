@@ -1,8 +1,8 @@
-import React from 'react'
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import heroImg from '../../assets/images/hero/Helvin_profile_bw.svg'
+import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import heroImg from '../../assets/images/hero/Helvin_profile_bw.svg';
 
 const Hero = ({ props }) => {
 	return (
@@ -77,8 +77,7 @@ const Hero = ({ props }) => {
 				</div>
 			</div>
 		</Container>
-	)
-}
+	);
+};
 
-export default Hero
-
+export default Hero;
