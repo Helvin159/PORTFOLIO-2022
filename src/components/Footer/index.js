@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 
 // Temporary
-import { nav_links } from '../../data/data';
+import { nav_links } from '../../data.js';
 import { PortfolioContext } from '../../contexts/portfolioProvider';
 
 const Footer = () => {

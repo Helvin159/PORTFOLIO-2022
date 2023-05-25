@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 // Temporary
-import { nav_links } from '../../data/data';
+import { nav_links } from '../../data';
 
 const Header = () => {
 	const { portfolio } = useContext(PortfolioContext);
