@@ -3,14 +3,14 @@ import { Outlet as Layout } from 'react-router-dom';
 import Header from '../../components/Header/index';
 import Footer from '../../components/Footer/index';
 
-const Outlet = ({ props }) => {
+const Outlet = () => {
 	return (
 		<Fragment>
-			<Header props={props} />
+			<Header />
 			<main>
 				<Layout />
 			</main>
-			<Footer props={props} />
+			<Footer />
 		</Fragment>
 	);
 };

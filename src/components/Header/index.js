@@ -1,10 +1,17 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useContext } from 'react';
+import { PortfolioContext } from '../../contexts/portfolioProvider';
 import { Link } from 'react-router-dom';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+
+// Temporary
 import { nav_links } from '../../data/data';
 
-const Header = ({ props }) => {
+const Header = () => {
+	const { portfolio } = useContext(PortfolioContext);
+
+	const { nick_name } = portfolio;
+
 	return (
 		<Fragment>
 			<header className='nav__bar'>
@@ -12,17 +19,9 @@ const Header = ({ props }) => {
 					<Col sm={6} className='text-center'>
 						<div>
 							<p className='didot m-0'>
-								{nav_links.map(
-									(e, i) =>
-										e.url === '/' && (
-											<Link
-												to='/'
-												key={`${i}-${props.nick_name}`}
-												className='display-6'>
-												{props.nick_name}
-											</Link>
-										)
-								)}
+								<Link to='/' key={`0-${nick_name}`} className='display-6'>
+									{nick_name}
+								</Link>
 							</p>
 						</div>
 					</Col>

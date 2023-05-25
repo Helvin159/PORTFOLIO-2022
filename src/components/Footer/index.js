@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
+
+// Temporary
 import { nav_links } from '../../data/data';
-const Footer = ({ props }) => {
+import { PortfolioContext } from '../../contexts/portfolioProvider';
+
+const Footer = () => {
+	const { portfolio } = useContext(PortfolioContext);
+	const { social_media } = portfolio;
+
 	return (
 		<footer className='footer py-3'>
 			<Container className='text-center mx-auto max-w-1024 footer__links py-2'>
@@ -16,7 +23,7 @@ const Footer = ({ props }) => {
 				))}
 			</Container>
 			<Container className='text-center mx-auto max-w-1024 footer__social-links py-2'>
-				{props.social_media.map((i, k) => (
+				{social_media.map((i, k) => (
 					<a
 						href={i.acct_url}
 						className='px-3 egg-shell-font footer__social-links__link'
